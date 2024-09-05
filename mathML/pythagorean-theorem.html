@@ -1,0 +1,180 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, minimum-scale=1, initial-scale=1, user-scalable=yes">
+  <title>Math-ML: Proving the Pythagorean theorem</title>
+  <style>
+    body {
+      margin: 0;
+      font-family: sans-serif;
+      font-size: 16px;
+      font-weight: 300;
+    }
+
+    article {
+      max-width: 700px;
+      margin: 0 auto;
+      padding: 25px 16px;
+    }
+
+    h1 {
+      font-weight: 300;
+      border-bottom: 1px solid #d8d8d8;
+      padding-bottom: 10px;
+      margin: 0;
+    }
+
+    math-ml {
+      margin: 0 10px;
+    }
+
+    a {
+      color: darkcyan;
+      text-decoration: none;
+    }
+
+    a:hover {
+      text-decoration: underline;
+    }
+  </style>
+  <script src="https://unpkg.com/@webcomponents/webcomponentsjs@latest/webcomponents-loader.js"></script>
+  <script async src="../dist/bundled/mathml.min.js"></script>
+
+  <script async src="https://www.googletagmanager.com/gtag/js?id=UA-86217723-4"></script>
+  <script>
+    window.dataLayer = window.dataLayer || [];
+    function gtag() { dataLayer.push(arguments); }
+    gtag('js', new Date());
+    gtag('config', 'UA-86217723-4');
+  </script>
+</head>
+
+<body>
+  <article>
+    <h1><a href="https://github.com/pshihn/math-ml" rel="noopener">Math-ML</a>: Proving the Pythagorean theorem</h1>
+    <p>We will now prove the Pythogorian theorem:</p>
+
+    <p><strong>Statement</strong>: In a right angled triangle, the square of the hypotenuse is equal to the sum of the
+      squares of the other two sides.</p>
+
+    <p>i.e, If a and b are the legs and c is the hypotenuse then<math-ml>
+        <math-row>
+          <math-sup>
+            <math-i> a </math-i>
+            <math-n>2</math-n>
+          </math-sup>
+          <math-o> + </math-o>
+          <math-sup>
+            <math-i> b </math-i>
+            <math-n>2</math-n>
+          </math-sup>
+          <math-o> = </math-o>
+          <math-sup>
+            <math-i> c </math-i>
+            <math-n>2</math-n>
+          </math-sup>
+        </math-row>
+      </math-ml>.</p>
+    <p><strong>Proof:</strong> We can prove the theorem algebraically by showing that the area of the big square
+      equals the area of the inner square (hypotenuse squared) plus the area of the four triangles:
+
+      <math-ml style="display: block; margin: 10px;">
+        <math-table columnalign="right center left">
+          <math-tr>
+            <math-td>
+              <math-sup>
+                <math-row>
+                  <math-o> ( </math-o>
+                  <math-i> a </math-i>
+                  <math-o> + </math-o>
+                  <math-i> b </math-i>
+                  <math-o> ) </math-o>
+                </math-row>
+                <math-n> 2 </math-n>
+              </math-sup>
+            </math-td>
+            <math-td>
+              <math-o> = </math-o>
+            </math-td>
+            <math-td>
+              <math-sup>
+                <math-i> c </math-i>
+                <math-n>2</math-n>
+              </math-sup>
+              <math-o> + </math-o>
+              <math-n> 4 </math-n>
+              <math-o> ⋅ </math-o>
+              <math-o>(</math-o>
+              <math-frac>
+                <math-n> 1 </math-n>
+                <math-n> 2 </math-n>
+              </math-frac>
+              <math-i> a </math-i>
+              <math-i> b </math-i>
+              <math-o>)</math-o>
+            </math-td>
+          </math-tr>
+          <math-tr>
+            <math-td>
+              <math-sup>
+                <math-i> a </math-i>
+                <math-n>2</math-n>
+              </math-sup>
+              <math-o> + </math-o>
+              <math-n> 2 </math-n>
+              <math-i> a </math-i>
+              <math-i> b </math-i>
+              <math-o> + </math-o>
+              <math-sup>
+                <math-i> b </math-i>
+                <math-n>2</math-n>
+              </math-sup>
+            </math-td>
+            <math-td>
+              <math-o> = </math-o>
+            </math-td>
+            <math-td>
+              <math-sup>
+                <math-i> c </math-i>
+                <math-n>2</math-n>
+              </math-sup>
+              <math-o> + </math-o>
+              <math-n> 2 </math-n>
+              <math-i> a </math-i>
+              <math-i> b</math-i>
+            </math-td>
+          </math-tr>
+          <math-tr>
+            <math-td></math-td>
+          </math-tr>
+          <math-tr>
+            <math-td>
+              <math-sup>
+                <math-i>a </math-i>
+                <math-n>2</math-n>
+              </math-sup>
+              <math-o> + </math-o>
+              <math-sup>
+                <math-i> b </math-i>
+                <math-n>2</math-n>
+              </math-sup>
+            </math-td>
+            <math-td>
+              <math-o> = </math-o>
+            </math-td>
+            <math-td>
+              <math-sup>
+                <math-i> c </math-i>
+                <math-n>2</math-n>
+              </math-sup>
+            </math-td>
+          </math-tr>
+        </math-table>
+      </math-ml>
+    </p>
+  </article>
+</body>
+
+</html>
