@@ -4,7 +4,7 @@ Age of Empires II recorded game parsing and summarization in Python 3.
 
 ## Supported Versions
 
-- Age of Kings (`.mgl`)
+- Age of Kings! (`.mgl`)
 - The Conquerors (`.mgx`)
 - Userpatch 1.4 (`.mgz`)
 - Userpatch 1.5 (`.mgz`)
