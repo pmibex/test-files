@@ -1,0 +1,36 @@
+= System Architecture Overview
+Author Name
+2025-06-23
+
+This document provides a high-level overview of the system architecture.
+
+== UML Diagram
+
+The diagram below illustrates the interactions between major components.
+
+[plantuml, format=svg]
+----
+@startuml
+title High-Level System Architecture
+
+actor User
+rectangle "Web App" {
+  User --> WebApp : HTTP Request
+  WebApp --> "Auth Service" : Auth Request
+  WebApp --> "Backend API" : REST Call
+}
+rectangle "Backend API" {
+  "Backend API" --> "Database" : SQL Query
+  "Backend API" --> "External API" : HTTPS Request
+}
+
+@enduml
+----
+
+== Components
+
+* *Web App*: Frontend interface for user interaction.
+* *Auth Service*: Authentication and authorization.
+* *Backend API*: Core logic and data orchestration.
+* *Database*: Relational data storage.
+* *External API*: Integration with third-party services.
